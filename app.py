@@ -8,6 +8,13 @@ from sklearn.metrics import roc_curve, roc_auc_score
 from utils import load_data, preprocess_data, get_features_and_target
 from sklearn.model_selection import train_test_split
 
+# Auto-train model if not exists
+import os
+if not os.path.exists('models/credit_model.pkl'):
+    from model import train_model
+    train_model()
+
+
 # --- Page Config ---
 st.set_page_config(
     page_title="Credit Risk Analyzer",
