@@ -1,0 +1,26 @@
+# 💳 AI-Powered Credit Risk Assessment Model
+
+A machine learning application that predicts the probability of loan default using XGBoost, with an interactive Streamlit dashboard.
+
+## 🚀 Features
+- Predicts loan default probability with a risk gauge
+- ROC Curve & AUC-ROC performance metrics
+- Feature importance visualization
+- Interactive borrower input form
+
+## 🛠️ Tech Stack
+Python | XGBoost | Scikit-learn | Streamlit | Plotly | Pandas
+
+## 📊 Dataset
+[Credit Risk Dataset - Kaggle](https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+
+## ⚙️ Setup & Run
+```bash
+pip install -r requirements.txt
+python model.py        # Train and save the model
+streamlit run app.py   # Launch the dashboard
+```
+
+## 📈 Model Performance
+- Algorithm: XGBoost Classifier
+- Metric: AUC-ROC Score ~0.93
